@@ -1,0 +1,16 @@
+D:\code\Balta\1 - Fundamentos do C#\Calculator\bin\Debug\net5.0\Calculator.exe
+D:\code\Balta\1 - Fundamentos do C#\Calculator\bin\Debug\net5.0\Calculator.deps.json
+D:\code\Balta\1 - Fundamentos do C#\Calculator\bin\Debug\net5.0\Calculator.runtimeconfig.json
+D:\code\Balta\1 - Fundamentos do C#\Calculator\bin\Debug\net5.0\Calculator.runtimeconfig.dev.json
+D:\code\Balta\1 - Fundamentos do C#\Calculator\bin\Debug\net5.0\Calculator.dll
+D:\code\Balta\1 - Fundamentos do C#\Calculator\bin\Debug\net5.0\ref\Calculator.dll
+D:\code\Balta\1 - Fundamentos do C#\Calculator\bin\Debug\net5.0\Calculator.pdb
+D:\code\Balta\1 - Fundamentos do C#\Calculator\obj\Debug\net5.0\Calculator.csproj.AssemblyReference.cache
+D:\code\Balta\1 - Fundamentos do C#\Calculator\obj\Debug\net5.0\Calculator.GeneratedMSBuildEditorConfig.editorconfig
+D:\code\Balta\1 - Fundamentos do C#\Calculator\obj\Debug\net5.0\Calculator.AssemblyInfoInputs.cache
+D:\code\Balta\1 - Fundamentos do C#\Calculator\obj\Debug\net5.0\Calculator.AssemblyInfo.cs
+D:\code\Balta\1 - Fundamentos do C#\Calculator\obj\Debug\net5.0\Calculator.csproj.CoreCompileInputs.cache
+D:\code\Balta\1 - Fundamentos do C#\Calculator\obj\Debug\net5.0\Calculator.dll
+D:\code\Balta\1 - Fundamentos do C#\Calculator\obj\Debug\net5.0\ref\Calculator.dll
+D:\code\Balta\1 - Fundamentos do C#\Calculator\obj\Debug\net5.0\Calculator.pdb
+D:\code\Balta\1 - Fundamentos do C#\Calculator\obj\Debug\net5.0\Calculator.genruntimeconfig.cache
