@@ -19,8 +19,7 @@ namespace JogoDaForca
       Tries = 3;
       Word = new();
       SetWord();
-
-      Print.GamePrint(Tip, Word, Tries);
+      Print.GameWriteText(Tip, Word, Tries);
       GetLetter();
     }
 
@@ -50,7 +49,7 @@ namespace JogoDaForca
       if (Tries == 0) YouLose();
       if (alreadyWin) YouWin();
 
-      Print.GamePrint(Tip, Word, Tries);
+      Print.GameWriteText(Tip, Word, Tries);
     }
 
     private static void YouLose()
@@ -58,6 +57,7 @@ namespace JogoDaForca
       Console.Clear();
       Console.WriteLine("Voce foi inforcado !!");
       Thread.Sleep(2500);
+      Menu.Show();
     }
 
     private static void YouWin()
@@ -65,6 +65,7 @@ namespace JogoDaForca
       Console.Clear();
       Console.WriteLine(@"\o/ Parabens \o/");
       Thread.Sleep(2500);
+      Menu.Show();
     }
 
     private static void SetWord()

@@ -8,16 +8,11 @@ namespace JogoDaForca
     public static short Rows { get; set; }
     public static short Columns { get; set; }
 
-    public static void GamePrint(string tip, IList<char> word, short tries)
+    private static void LayoutDraw()
     {
-      Rows = 40;
-      Columns = 8;
-      GameDraw(Rows, Columns);
-      GameWriteText(tip, word, tries);
-    }
+      Rows = 8;
+      Columns = 40;
 
-    public static void GameDraw(short Columns, short Rows)
-    {
       Console.Clear();
       Console.ForegroundColor = ConsoleColor.White;
       Console.BackgroundColor = ConsoleColor.DarkGray;
@@ -50,22 +45,22 @@ namespace JogoDaForca
       }
       Console.WriteLine("+");
     }
-
     public static void GameWriteText(string tip, IList<char> word, short tries)
     {
+      LayoutDraw();
       int origRow = Console.CursorTop;
       int origCol = Console.CursorLeft;
 
       //Cabecalho
-      Console.SetCursorPosition((Rows / 2) - (15 / 2), 2);
+      Console.SetCursorPosition((Columns / 2) - (15 / 2), 2);
       Console.Write("Jogo da Forca !");
 
       //Tries
-      Console.SetCursorPosition(Rows - 1, 1);
+      Console.SetCursorPosition(Columns - 1, 1);
       Console.Write($"{tries} ");
 
       //word
-      Console.SetCursorPosition(((Rows / 2) - (word.Count / 2)) - 1, 5);
+      Console.SetCursorPosition(((Columns / 2) - (word.Count / 2)) - 1, 5);
       for (int i = 0; i < word.Count; i++)
       {
         Console.Write($"{word[i]} ");
@@ -73,12 +68,33 @@ namespace JogoDaForca
 
       //tip
       var stringParaMedir = $"A dica é: {tip}";
-      Console.SetCursorPosition((Rows / 2) - (stringParaMedir.Length / 2), 8);
+      Console.SetCursorPosition((Columns / 2) - (stringParaMedir.Length / 2), 8);
       Console.Write($"A dica é: {tip}");
 
       Console.SetCursorPosition(origCol, origRow);
 
       Game.GetLetter();
+    }
+    public static void MenuWriteText()
+    {
+      LayoutDraw();
+
+      int origRow = Console.CursorTop;
+      int origCol = Console.CursorLeft;
+
+      //Cabecalho
+      Console.SetCursorPosition((Columns / 2) - (15 / 2), 2);
+      Console.Write("Jogo da Forca !");
+
+      //Corpo
+      Console.SetCursorPosition((Columns / 2) - 10, 4);
+      Console.Write("1 - Jogar ");
+      Console.SetCursorPosition((Columns / 2) - 10, 5);
+      Console.Write("2 - Adicionar Palavras ");
+      Console.SetCursorPosition((Columns / 2) - 10, 6);
+      Console.Write("3 - Sair");
+
+      Console.SetCursorPosition(origCol, origRow);
     }
   }
 }
