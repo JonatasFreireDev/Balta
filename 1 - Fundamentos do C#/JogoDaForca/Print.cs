@@ -96,5 +96,58 @@ namespace JogoDaForca
 
       Console.SetCursorPosition(origCol, origRow);
     }
+    public static void WinText()
+    {
+      LayoutDraw();
+
+      int origRow = Console.CursorTop;
+      int origCol = Console.CursorLeft;
+
+      //Cabecalho
+      Console.SetCursorPosition((Columns / 2) - (16 / 2), 3);
+      Console.Write(@"\o/ Parabéns \o/");
+
+      //Corpo
+      Console.SetCursorPosition((Columns / 2) - (17 / 2), 5);
+      Console.Write("Voce sobreviveu !");
+
+      Console.SetCursorPosition(origCol, origRow);
+    }
+    public static void LoseText()
+    {
+      LayoutDraw();
+
+      int origRow = Console.CursorTop;
+      int origCol = Console.CursorLeft;
+
+      //Cabecalho
+      Console.SetCursorPosition((Columns / 2) - (15 / 2), 3);
+      Console.Write("Infelizmente...");
+
+      //Corpo
+      Console.SetCursorPosition((Columns / 2) - (20 / 2), 5);
+      Console.Write("Voce foi inforcado!!");
+      Console.SetCursorPosition((Columns / 2) - (4 / 2), 6);
+      Console.Write("O.o");
+
+      Console.SetCursorPosition(origCol, origRow);
+    }
+    public static void ErrorText(string errorMessage)
+    {
+      LayoutDraw();
+
+      int origRow = Console.CursorTop;
+      int origCol = Console.CursorLeft;
+
+      //Cabecalho
+      Console.SetCursorPosition((Columns / 2) - (15 / 2), 3);
+      Console.Write("Ocorreu um erro !");
+
+      //Corpo
+      Console.SetCursorPosition((Columns / 2) - (errorMessage.Length / 2), 5);
+      Console.Write($"{errorMessage}");
+
+      Console.SetCursorPosition(origCol, origRow);
+    }
   }
 }

@@ -54,18 +54,16 @@ namespace JogoDaForca
 
     private static void YouLose()
     {
-      Console.Clear();
-      Console.WriteLine("Voce foi inforcado !!");
-      Thread.Sleep(2500);
-      Menu.Show();
+      Print.LoseText();
+      Thread.Sleep(3500);
+      Menu.MainMenu();
     }
 
     private static void YouWin()
     {
-      Console.Clear();
-      Console.WriteLine(@"\o/ Parabens \o/");
-      Thread.Sleep(2500);
-      Menu.Show();
+      Print.WinText();
+      Thread.Sleep(3500);
+      Menu.MainMenu();
     }
 
     private static void SetWord()

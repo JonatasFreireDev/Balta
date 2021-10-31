@@ -6,7 +6,7 @@ namespace JogoDaForca
   {
     static void Main(string[] args)
     {
-      Menu.Show();
+      Menu.MainMenu();
     }
   }
 }
