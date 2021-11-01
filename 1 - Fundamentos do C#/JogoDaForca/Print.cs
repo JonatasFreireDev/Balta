@@ -193,6 +193,24 @@ namespace JogoDaForca
       Console.SetCursorPosition(origCol, origRow);
     }
 
+    public static void AddWordsSuccessMenuText()
+    {
+      LayoutDraw();
+
+      int origRow = Console.CursorTop;
+      int origCol = Console.CursorLeft;
+
+      //Cabecalho
+      Console.SetCursorPosition((Columns / 2) - (7 / 2), 3);
+      Console.Write("Sucesso");
+
+      //Corpo
+      Console.SetCursorPosition((Columns / 2) - (17 / 2), 5);
+      Console.Write("Palavra inserida!");
+
+      Console.SetCursorPosition(origCol, origRow);
+    }
+
     public static void ErrorText(string errorMessage)
     {
       LayoutDraw();

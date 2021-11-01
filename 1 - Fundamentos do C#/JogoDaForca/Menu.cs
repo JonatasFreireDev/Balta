@@ -47,8 +47,6 @@ namespace JogoDaForca
         ErrorHandling.HasError($"{err.Message}");
       }
 
-      //if (choice.GetType() != typeof(int)) ErrorHandling.HasError("Digito digitado \n diferente de numero");
-
       switch (choice)
       {
         case 1: AddWordsMenu(); break;
@@ -60,11 +58,27 @@ namespace JogoDaForca
 
     public static void AddWordsMenu()
     {
-      //TODO
       Print.AddWordsMenuText();
 
       string word = Console.ReadLine();
 
+      try
+      {
+        Archive.InsertWord(word);
+      }
+      catch (Exception err)
+      {
+        ErrorHandling.HasError(err.Message);
+      }
+
+      AddTextSuccessMenu();
+    }
+
+    private static void AddTextSuccessMenu()
+    {
+      Print.AddWordsSuccessMenuText();
+      Thread.Sleep(3500);
+      WordsMenu();
     }
 
     private static void RemoveTextMenu()
@@ -72,6 +86,20 @@ namespace JogoDaForca
       Print.RemoveWordMenuText();
       Thread.Sleep(3500);
       WordsMenu();
+    }
+
+    public static void YouLoseMenu()
+    {
+      Print.LoseText();
+      Thread.Sleep(3500);
+      Menu.MainMenu();
+    }
+
+    public static void YouWinMenu()
+    {
+      Print.WinText();
+      Thread.Sleep(3500);
+      Menu.MainMenu();
     }
   }
 }

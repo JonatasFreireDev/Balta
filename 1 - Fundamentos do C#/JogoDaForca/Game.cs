@@ -46,24 +46,10 @@ namespace JogoDaForca
       }
 
       if (!hasWord) Tries--;
-      if (Tries == 0) YouLose();
-      if (alreadyWin) YouWin();
+      if (Tries == 0) Menu.YouLoseMenu();
+      if (alreadyWin) Menu.YouWinMenu();
 
       Print.GameWriteText(Tip, Word, Tries);
-    }
-
-    private static void YouLose()
-    {
-      Print.LoseText();
-      Thread.Sleep(3500);
-      Menu.MainMenu();
-    }
-
-    private static void YouWin()
-    {
-      Print.WinText();
-      Thread.Sleep(3500);
-      Menu.MainMenu();
     }
 
     private static void SetWord()
