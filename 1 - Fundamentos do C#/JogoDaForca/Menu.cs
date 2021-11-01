@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 
 namespace JogoDaForca
 {
@@ -33,7 +34,44 @@ namespace JogoDaForca
 
     public static void WordsMenu()
     {
+      Print.WordsMenuText();
+      short? choice = null;
+      Console.Write("Digite um numero: ");
+
+      try
+      {
+        choice = short.Parse(Console.ReadLine());
+      }
+      catch (Exception err)
+      {
+        ErrorHandling.HasError($"{err.Message}");
+      }
+
+      //if (choice.GetType() != typeof(int)) ErrorHandling.HasError("Digito digitado \n diferente de numero");
+
+      switch (choice)
+      {
+        case 1: AddWordsMenu(); break;
+        case 2: RemoveTextMenu(); break;
+        case 3: MainMenu(); break;
+        default: ErrorHandling.HasError("Opção invalida"); break;
+      }
+    }
+
+    public static void AddWordsMenu()
+    {
       //TODO
+      Print.AddWordsMenuText();
+
+      string word = Console.ReadLine();
+
+    }
+
+    private static void RemoveTextMenu()
+    {
+      Print.RemoveWordMenuText();
+      Thread.Sleep(3500);
+      WordsMenu();
     }
   }
 }

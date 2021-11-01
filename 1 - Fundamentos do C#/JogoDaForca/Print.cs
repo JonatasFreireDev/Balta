@@ -45,6 +45,7 @@ namespace JogoDaForca
       }
       Console.WriteLine("+");
     }
+
     public static void GameWriteText(string tip, IList<char> word, short tries)
     {
       LayoutDraw();
@@ -75,6 +76,7 @@ namespace JogoDaForca
 
       Game.GetLetter();
     }
+
     public static void MenuWriteText()
     {
       LayoutDraw();
@@ -87,15 +89,72 @@ namespace JogoDaForca
       Console.Write("Jogo da Forca !");
 
       //Corpo
-      Console.SetCursorPosition((Columns / 2) - 10, 4);
+      Console.SetCursorPosition((Columns / 2) - 7, 4);
       Console.Write("1 - Jogar ");
-      Console.SetCursorPosition((Columns / 2) - 10, 5);
-      Console.Write("2 - Adicionar Palavras ");
-      Console.SetCursorPosition((Columns / 2) - 10, 6);
+      Console.SetCursorPosition((Columns / 2) - 7, 5);
+      Console.Write("2 - Palavras");
+      Console.SetCursorPosition((Columns / 2) - 7, 6);
       Console.Write("3 - Sair");
 
       Console.SetCursorPosition(origCol, origRow);
     }
+
+    public static void WordsMenuText()
+    {
+      LayoutDraw();
+
+      int origRow = Console.CursorTop;
+      int origCol = Console.CursorLeft;
+
+      //Cabecalho
+      Console.SetCursorPosition((Columns / 2) - (15 / 2), 2);
+      Console.Write("Jogo da Forca !");
+
+      //Corpo
+      Console.SetCursorPosition((Columns / 2) - 15, 4);
+      Console.Write("1 - Adicionar uma palavra");
+      Console.SetCursorPosition((Columns / 2) - 15, 5);
+      Console.Write("2 - Remover ultima palavra add");
+      Console.SetCursorPosition((Columns / 2) - 15, 6);
+      Console.Write("3 - Voltar");
+
+      Console.SetCursorPosition(origCol, origRow);
+    }
+
+    public static void AddWordsMenuText()
+    {
+      LayoutDraw();
+
+      //Cabecalho
+      Console.SetCursorPosition((Columns / 2) - (15 / 2), 2);
+      Console.Write("Jogo da Forca !");
+
+      //Corpo
+      Console.SetCursorPosition((Columns / 2) - (12 / 2), 4);
+      Console.Write("dica-palavra");
+      Console.SetCursorPosition((Columns / 2) - (23 / 2), 6);
+      Console.Write("Insira uma dica-palavra");
+      Console.SetCursorPosition((Columns / 2) - (23 / 2), 7);
+      Console.Write("^ como descrito acima ^");
+      Console.SetCursorPosition((Columns / 2) - 10, 8);
+    }
+
+    public static void RemoveWordMenuText()
+    {
+      LayoutDraw();
+
+      int origRow = Console.CursorTop;
+      int origCol = Console.CursorLeft;
+
+      //Cabecalho
+      Console.SetCursorPosition((Columns / 2) - (12 / 2), 4);
+      Console.Write("Removido com");
+      Console.SetCursorPosition((Columns / 2) - (7 / 2), 5);
+      Console.Write("Sucesso");
+
+      Console.SetCursorPosition(origCol, origRow);
+    }
+
     public static void WinText()
     {
       LayoutDraw();
@@ -113,6 +172,7 @@ namespace JogoDaForca
 
       Console.SetCursorPosition(origCol, origRow);
     }
+
     public static void LoseText()
     {
       LayoutDraw();
@@ -132,6 +192,7 @@ namespace JogoDaForca
 
       Console.SetCursorPosition(origCol, origRow);
     }
+
     public static void ErrorText(string errorMessage)
     {
       LayoutDraw();
