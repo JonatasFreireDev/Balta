@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Collections.Generic;
 
 namespace JogoDaForca
@@ -61,7 +62,7 @@ namespace JogoDaForca
       Console.Write($"{tries} ");
 
       //word
-      Console.SetCursorPosition(((Columns / 2) - (word.Count / 2)) - 1, 5);
+      Console.SetCursorPosition(((Columns / 2) - (word.Count / 2)) - 3, 5);
       for (int i = 0; i < word.Count; i++)
       {
         Console.Write($"{word[i]} ");

@@ -77,14 +77,23 @@ namespace JogoDaForca
     private static void AddTextSuccessMenu()
     {
       Print.AddWordsSuccessMenuText();
-      Thread.Sleep(3500);
+      Thread.Sleep(2500);
       WordsMenu();
     }
 
     private static void RemoveTextMenu()
     {
+      try
+      {
+        Archive.RemoveLastWord();
+      }
+      catch (Exception err)
+      {
+        ErrorHandling.HasError("Não foi possivel excluir !");
+      }
+
       Print.RemoveWordMenuText();
-      Thread.Sleep(3500);
+      Thread.Sleep(2500);
       WordsMenu();
     }
 

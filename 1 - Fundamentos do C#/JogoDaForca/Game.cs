@@ -14,8 +14,9 @@ namespace JogoDaForca
     public static void PlayGame()
     {
       //Init
-      SecretWord = "Amor";
-      Tip = "Teste";
+      var data = Archive.GetSomeWord();
+      Tip = data[0];
+      SecretWord = data[1];
       Tries = 3;
       Word = new();
       SetWord();
@@ -27,9 +28,19 @@ namespace JogoDaForca
     {
       bool hasWord = false;
       bool alreadyWin = true;
+      char? letter = null;
 
       Console.Write("Digite uma letra: ");
-      char letter = char.Parse(Console.ReadLine());
+
+      try
+      {
+        letter = char.Parse(Console.ReadLine());
+      }
+      catch
+      {
+        ErrorHandling.HasErrorInGame("Erro ao escolher uma letra", Tip, Word, Tries);
+        return;
+      }
 
       for (int i = 0; i < SecretWord.Length; i++)
       {
