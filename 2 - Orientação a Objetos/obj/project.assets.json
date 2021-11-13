@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\code\\Balta\\2 - Orientação a Objetos\\2 - Orientação a Objetos.csproj",
+      "projectUniqueName": "d:\\code\\Balta\\2 - Orientação a Objetos\\2 - Orientação a Objetos.csproj",
       "projectName": "2 - Orientação a Objetos",
-      "projectPath": "D:\\code\\Balta\\2 - Orientação a Objetos\\2 - Orientação a Objetos.csproj",
+      "projectPath": "d:\\code\\Balta\\2 - Orientação a Objetos\\2 - Orientação a Objetos.csproj",
       "packagesPath": "C:\\Users\\jonat\\.nuget\\packages\\",
-      "outputPath": "D:\\code\\Balta\\2 - Orientação a Objetos\\obj\\",
+      "outputPath": "d:\\code\\Balta\\2 - Orientação a Objetos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

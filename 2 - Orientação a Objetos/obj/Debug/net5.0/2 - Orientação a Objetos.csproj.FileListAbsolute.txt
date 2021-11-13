@@ -1,0 +1,16 @@
+D:\code\Balta\2 - Orientação a Objetos\bin\Debug\net5.0\2 - Orientação a Objetos.exe
+D:\code\Balta\2 - Orientação a Objetos\bin\Debug\net5.0\2 - Orientação a Objetos.deps.json
+D:\code\Balta\2 - Orientação a Objetos\bin\Debug\net5.0\2 - Orientação a Objetos.runtimeconfig.json
+D:\code\Balta\2 - Orientação a Objetos\bin\Debug\net5.0\2 - Orientação a Objetos.runtimeconfig.dev.json
+D:\code\Balta\2 - Orientação a Objetos\bin\Debug\net5.0\2 - Orientação a Objetos.dll
+D:\code\Balta\2 - Orientação a Objetos\bin\Debug\net5.0\ref\2 - Orientação a Objetos.dll
+D:\code\Balta\2 - Orientação a Objetos\bin\Debug\net5.0\2 - Orientação a Objetos.pdb
+D:\code\Balta\2 - Orientação a Objetos\obj\Debug\net5.0\2 - Orientação a Objetos.csproj.AssemblyReference.cache
+D:\code\Balta\2 - Orientação a Objetos\obj\Debug\net5.0\2 - Orientação a Objetos.GeneratedMSBuildEditorConfig.editorconfig
+D:\code\Balta\2 - Orientação a Objetos\obj\Debug\net5.0\2 - Orientação a Objetos.AssemblyInfoInputs.cache
+D:\code\Balta\2 - Orientação a Objetos\obj\Debug\net5.0\2 - Orientação a Objetos.AssemblyInfo.cs
+D:\code\Balta\2 - Orientação a Objetos\obj\Debug\net5.0\2 - Orientação a Objetos.csproj.CoreCompileInputs.cache
+D:\code\Balta\2 - Orientação a Objetos\obj\Debug\net5.0\2 - Orientação a Objetos.dll
+D:\code\Balta\2 - Orientação a Objetos\obj\Debug\net5.0\ref\2 - Orientação a Objetos.dll
+D:\code\Balta\2 - Orientação a Objetos\obj\Debug\net5.0\2 - Orientação a Objetos.pdb
+D:\code\Balta\2 - Orientação a Objetos\obj\Debug\net5.0\2 - Orientação a Objetos.genruntimeconfig.cache
